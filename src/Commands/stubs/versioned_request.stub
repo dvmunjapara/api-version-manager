@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+use ApiTools\ApiVersionManager\Http\Requests\BaseRequest;
+
+{{ versionClasses }}
+final class {{ class }} extends BaseRequest
+{
+}

@@ -1,0 +1,61 @@
+{
+    "name": "api-tools/api-version-manager",
+    "description": "Simplify Laravel API versioning with ease. No more separate controllers—just flexibility, fallbacks, and version-specific components.",
+    "keywords": [
+        "api",
+        "api-version-manager",
+        "laravel-package",
+        "api-versioning",
+        "laravel-resource",
+        "laravel-apis",
+        "laravel-api-versioning",
+        "laravel-api-version-manager"
+    ],
+    "homepage": "https://github.com/dvmunjapara/api-version-manager",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Divyank Munjapara",
+            "email": "mail@divyank.dev",
+            "role": "Developer"
+        },
+        {
+            "name": "Uttam Rabadiya",
+            "email": "mail@uttam.dev",
+            "homepage": "https://uttam.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ApiTools\\ApiVersionManager\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ApiTools\\ApiVersionManager\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ApiTools\\ApiVersionManager\\ApiVersionManagerServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+use ApiTools\ApiVersionManager\Http\Resources\BaseResource;
+
+{{ versionClasses }}
+final class {{ class }} extends BaseResource
+{
+}
